@@ -1,4 +1,4 @@
-# Nim game
+# Personal website
 > Image of the website home page
 
 <p align = "center">
