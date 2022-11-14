@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    /* i make a gradient */
+    background: linear-gradient(
+        to bottom right,
+        #ffffff 0%, #FBE0C3 50%, #7FC9D9 100%);
+    background-attachment: fixed;
+    margin : -8px;
+}
+h1{
+    color: #344648;
+    font : 100px 'Josefin Sans',sans-serif;
+}
+
+h2{
+    color: #344648;
+    font : 65px 'Josefin Sans',sans-serif;
+}
+
+p{
+    color: #7D8E95;
+    font: 25px 'Inter', sans-serif;
+}
+
+
+/* the menu*/
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+}
+.menu_item{
+    padding: 30px 50px 30px 10px;
+    font : 35px 'Josefin Sans',sans-serif;
+    color: #344648;
+    text-decoration: none;
+}
+.menu_item:hover{
+    transform-origin: top left;
+    transition-duration: 0.5s;
+    background-color: #FFBB98;
+    color: white;
+}
+
+
