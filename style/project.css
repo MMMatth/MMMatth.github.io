@@ -1,42 +1,40 @@
 .case{
     background-color : #FBE0C3;
-    padding: 75px;
+    padding: 20px;
 }
-#case1{
-    /* fondu gradient */
-    background: linear-gradient(
-        to bottom right,
-        #ffffff 0%, #FBE0C3 50%, #7FC9D9 100%);
+a{
+    text-decoration: none;
 }
-#case1:hover, #case2:hover, #case3:hover, #case4:hover{
-    animation: flotant 1s infinite;
-}
-@keyframes flotant{
+
+@keyframes droite{
     0%{
-        transform: translateX(0px);
-    }
-    50%{
-        transform: translateX(-10px);
+        transform: translateX(-20%);
+        opacity: 0;
     }
     100%{
-        transform: translateX(0px);
+        transform: translateX(0%);
+        opacity: 1;
     }
 }
-#case2{
-    /* fondu gradient */
-    background: linear-gradient(
-        to bottom right,
-        #ffffff 0%, #FBE0C3 50%, #7FC9D9 100%);
+@keyframes gauche{
+    0%{
+        transform: translateX(20%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
-#case3{
-    /* fondu gradient */
-    background: linear-gradient(
-        to bottom right,
-        #ffffff 0%, #FBE0C3 50%, #7FC9D9 100%);
+#case1, #case3, #case5{
+    animation: droite 0.5s ease-in-out;
+    background-color: #8bb9c4;
 }
-#case4{
-    /* fondu gradient */
-    background: linear-gradient(
-        to bottom right,
-        #ffffff 0%, #FBE0C3 50%, #7FC9D9 100%);
+#case2, #case4, #case6{
+    animation: gauche 0.5s ease-in-out;
+    background-color: #FFBB98;
+    text-align: right;
+}
+#case1:hover, #case2:hover, #case3:hover, #case4:hover{
+        font-size: 100%;
 }

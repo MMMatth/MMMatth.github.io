@@ -26,20 +26,21 @@ p{
 
 
 /* the menu*/
-.menu{
+nav{
     display: flex;
     justify-content: flex-end;
     background-color: white;
 }
-.menu_item{
-    padding: 30px 50px 30px 10px;
-    font : 35px 'Josefin Sans',sans-serif;
+nav .item{
+    padding: 25px 50px 20px 10px;
+    font : 30px 'Josefin Sans',sans-serif;
     color: #344648;
     text-decoration: none;
 }
-.menu_item:hover{
+nav .item:hover{
     transform-origin: top left;
     transition-duration: 0.5s;
     background-color: #FFBB98;
     color: white;
 }
+
