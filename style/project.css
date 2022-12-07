@@ -1,0 +1,42 @@
+.case{
+    background-color : #FBE0C3;
+    padding: 75px;
+}
+#case1{
+    /* fondu gradient */
+    background: linear-gradient(
+        to bottom right,
+        #ffffff 0%, #FBE0C3 50%, #7FC9D9 100%);
+}
+#case1:hover, #case2:hover, #case3:hover, #case4:hover{
+    animation: flotant 1s infinite;
+}
+@keyframes flotant{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+#case2{
+    /* fondu gradient */
+    background: linear-gradient(
+        to bottom right,
+        #ffffff 0%, #FBE0C3 50%, #7FC9D9 100%);
+}
+#case3{
+    /* fondu gradient */
+    background: linear-gradient(
+        to bottom right,
+        #ffffff 0%, #FBE0C3 50%, #7FC9D9 100%);
+}
+#case4{
+    /* fondu gradient */
+    background: linear-gradient(
+        to bottom right,
+        #ffffff 0%, #FBE0C3 50%, #7FC9D9 100%);
+}
