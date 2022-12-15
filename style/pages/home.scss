@@ -19,7 +19,8 @@ a{
     justify-content: center;
     width: 500px;
     animation: 0.5s ease-in 0.5s reverse both running slidein;
-    animation-name: right;
+    -webkit-animation-name: right;
+            animation-name: right;
     margin-right: 2%;
 }
 
@@ -29,13 +30,15 @@ a{
     background-color: #FFBB98;
     width: 500px;
     animation: 0.5s ease-in 0.5s reverse both running slidein;
-    animation-name: left;
+    -webkit-animation-name: left;
+            animation-name: left;
     margin-left: 2%;
+    h1{
+        color: #344648;
+        font : 65px 'Josefin Sans',sans-serif;
+    }
 }
-.left_img h1{
-    color: #344648;
-    font : 65px 'Josefin Sans',sans-serif;
-}
+
 .circle_img{
     border-radius: 50%;
     width: 250px;
@@ -54,6 +57,16 @@ a{
 }
 
 /* I put them keyframes (animation) */
+@-webkit-keyframes  left{
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
 @keyframes  left{
     0% {
         opacity: 1;
@@ -62,6 +75,16 @@ a{
     100% {
         opacity: 0;
         transform: translateX(-100%);
+    }
+}
+@-webkit-keyframes right{
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
     }
 }
 @keyframes right{

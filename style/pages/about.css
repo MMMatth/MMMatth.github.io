@@ -1,0 +1,74 @@
+h2 {
+  margin-top: 2%;
+  margin-left: 4.5%;
+  font-weight: bold;
+  animation: 0.2s ease-in 0.5s reverse both slidein;
+  -webkit-animation-name: down;
+          animation-name: down;
+}
+
+p {
+  margin-left: 5%;
+  margin-bottom: -10px;
+  width: 60%;
+  animation: 0.2s ease-in 0.5s reverse both slidein;
+  -webkit-animation-name: down;
+          animation-name: down;
+}
+
+a {
+  color: #344648;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* I put them keyframes (animation) */
+@-webkit-keyframes down {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+}
+@keyframes down {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+}
+@-webkit-keyframes up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+}
+@keyframes up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+}
+@media screen and (max-width: 1920px) {
+  h2 {
+    font-size: 50px;
+  }
+  p {
+    width: 90%;
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=about.css.map */

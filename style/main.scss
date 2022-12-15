@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import "./utils/_variables";
+@import "./utils/_mixins";
+@import "./utils/_variables";
 
 body{
     /* i make a gradient */
     background: linear-gradient(
         to bottom right,
-        #ffffff 0%, #FBE0C3 50%, #7FC9D9 100%);
+        $blanc 0%, $orange_clair 50%, $bleu_clair 100%);
     background-attachment: fixed;
     margin : -8px;
 }
 h1{
-    color: #344648;
+    color: $bleu_gris_fonce;
     font : 100px 'Josefin Sans',sans-serif;
 }
 
 h2{
-    color: #344648;
+    color: $bleu_gris_fonce;
     font : 65px 'Josefin Sans',sans-serif;
+    
 }
 
 p{
@@ -38,23 +42,31 @@ nav{
     justify-content: flex-end;
     align-items: center;
     padding: 0 50px;
+    &__item{
+        padding: 30px 50px 20px 10px;
+        font : 30px 'Josefin Sans',sans-serif;
+        color: $bleu_gris_fonce;
+        transition-duration: 0.5s;
+        text-decoration: none;
+        &:hover{
+            transform-origin: top left;
+            transition-duration: 0.5s;
+            background-color: #FFBB98;
+            color: white;
+        }
+    }
 }
-.bar_menu .item{
-    padding: 30px 50px 20px 10px;
-    font : 30px 'Josefin Sans',sans-serif;
-    color: #344648;
-    transition-duration: 0.5s;
-    text-decoration: none;
-}
-.bar_menu .item:hover, .hamburger_menu .item:hover{
-    transform-origin: top left;
-    transition-duration: 0.5s;
-    background-color: #FFBB98;
-    color: white;
-}
+
 /* the hamburger menu */
 .hamburger_menu{
     display: none;
+    .menu_box__item:hover{
+        transform-origin: top left;
+        transition-duration: 0.5s;
+        background-color: #FFBB98;
+        color: white;
+    }
+
 }
 #menu__toggle {
     opacity: 0;
@@ -89,7 +101,7 @@ nav{
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #344648;
+    background-color: $bleu_gris_fonce;
     transition-duration: .25s;
   }
   .menu_btn > span::before {
@@ -110,15 +122,15 @@ nav{
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #ffffff;
+    background-color: white;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
     z-index: 2;
   }
-  .menu_box .item{
+  .menu_box .menu_box__item{
     display: block;
     padding: 8px 16px;
-    color: #344648;
+    color: $bleu_gris_fonce;
     text-decoration: none;
     font : 30px 'Josefin Sans',sans-serif;
   }

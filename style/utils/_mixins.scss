@@ -1,0 +1,12 @@
+@mixin bord_arrondi($radius: 10px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin font_josefin_sans{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
