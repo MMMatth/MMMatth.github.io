@@ -4,14 +4,13 @@ import { Link } from 'react-router-dom'
 
 
 const StyledLink = styled(Link)`
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     padding: 10px;
     color: #8186a0;
     text-decoration: none;
-    font-size: 18px;
-    font : 400 18px/1.5 'Roboto', sans-serif;
-    ${(props) =>
-        props.$isFullLink &&
-        `color: white; border-radius: 30px; background-color: ${color.primary};`}
+    font-size: 28px;
+    font-family : 'Quicksand', sans-serif, bold;
+    color : ${color.background};
 `
 
 const StyledNav = styled('nav')`
@@ -19,7 +18,6 @@ const StyledNav = styled('nav')`
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: ${color.primary};
     color: white;
 `
 
@@ -28,7 +26,7 @@ const HeaderContainer = styled('div')`
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
-    background-color: white;
+    background-color: ${color.primary};
 
 
 `
@@ -40,6 +38,7 @@ function Header(){
             <StyledNav>
                 <StyledLink to="/">Home</StyledLink>
                 <StyledLink to="/about">About</StyledLink>
+                <StyledLink to="/project">Project</StyledLink>
             </StyledNav>
         </HeaderContainer>
     )
