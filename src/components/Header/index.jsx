@@ -36,9 +36,9 @@ function Header(){
     return (
         <HeaderContainer>
             <StyledNav>
-                <StyledLink to="/">Home</StyledLink>
-                <StyledLink to="/about">About</StyledLink>
-                <StyledLink to="/project">Project</StyledLink>
+                <StyledLink to="portefolio/">Home</StyledLink>
+                <StyledLink to="portefolio/about">About</StyledLink>
+                <StyledLink to="portefolio/project">Project</StyledLink>
             </StyledNav>
         </HeaderContainer>
     )
