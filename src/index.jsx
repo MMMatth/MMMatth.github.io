@@ -21,9 +21,9 @@ root.render(
       <GlobalStyle />
       <Header />
         <Routes>
-          <Route exact path="portefolio/" element={<Home />} />
-          <Route path="portefolio/about" element={<About />} />
-          <Route path="portefolio/project" element={<Project />} />
+          <Route exact path="portfolio/" element={<Home />} />
+          <Route path="portfolio/about" element={<About />} />
+          <Route path="portfolio/project" element={<Project />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
     </Router>
