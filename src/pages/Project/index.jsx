@@ -71,7 +71,7 @@ const Project = () => {
           <ProjectBox
             key={project.id}
           >          
-          <h2>{project.name}</h2>
+          <h2>{project.name.replace(/-/g," ")}</h2>
             <p>{project.description}</p>
             <a href={project.html_url}>View on GitHub</a>
           </ProjectBox>
